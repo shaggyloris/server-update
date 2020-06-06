@@ -1,0 +1,14 @@
+---
+- name: Installs default required packages
+  hosts: all
+  roles:
+  - role: apt_install
+    vars:
+      - packages:
+        - syslog-ng
+    when: "ansible_facts['os_family'] == 'Debian'"
+  - role: yum_install
+    vars:
+     - packages:
+       - syslog-ng
+    when: "ansible_facts['os_family'] == 'RedHat'"
