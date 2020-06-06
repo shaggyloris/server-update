@@ -1,5 +1,0 @@
----
-- name: Update packages with YUM
-  apt:
-    name: "*"
-    state: latest

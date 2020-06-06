@@ -1,0 +1,8 @@
+apt_packages:
+  - syslog-ng
+apt_remove:
+  - rsyslog
+yum_packages:
+  - syslog-ng
+yum_remove:
+  - rsyslog

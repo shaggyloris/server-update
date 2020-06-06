@@ -2,5 +2,4 @@
 - name: Update packages on all servers
   hosts: all
   roles:
-    - {role: apt_update, when: "ansible_facts['os_family'] == 'Debian'"}
-    - {role: yum_update, when: "ansible_facts['os_family'] == 'RedHat'"}
+    - role: update_packages

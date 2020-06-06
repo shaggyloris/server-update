@@ -1,5 +1,0 @@
----
-- name: Update packages with YUM
-  yum:
-    name: '*'
-    state: latest

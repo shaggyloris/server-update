@@ -1,8 +1,0 @@
----
-- name: remove the rsyslog package
-  yum:
-    name: rsyslog
-    state: absent
-- name: Install packages
-  yum:
-    name: "{{ packages }}"
